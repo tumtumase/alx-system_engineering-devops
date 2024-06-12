@@ -1,2 +1,2 @@
 #!/bin/bash
-for dir in . ../ /boot; do ls -la $dir; done
+ls -la /{.,..,boot}
