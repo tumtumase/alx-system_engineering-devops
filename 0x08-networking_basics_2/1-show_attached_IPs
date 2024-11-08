@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script that displays all active IPv4 IPs on the machine
+
+# Get IPv4 addresses from /proc/net/fib_trie
+grep -v "^$\|^[[:space:]]*$" /proc/net/fib_trie | awk '/32 host/ { print f } { f=$2 }' | sort -u | grep -v 'error'
