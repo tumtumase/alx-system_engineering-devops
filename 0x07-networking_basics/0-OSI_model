@@ -1,17 +1,2 @@
-What is the OSI Model?
-The OSI model is primarily defined as a conceptual model that characterizes the communication functions of a telecommunication system without regard to their underlying internal structure and technology 23. It serves as a guideline for technology vendors and developers to ensure interoperability among various network devices and software applications. The model does not perform any networking functions itself; rather, it provides a framework to understand how different networking protocols interact 14.
-Key Characteristics of the OSI Model:
-Layered Structure: The model consists of seven layers, each responsible for specific aspects of communication.
-Interoperability: It allows diverse communication systems to communicate using standard protocols.
-Troubleshooting Aid: The OSI model is useful for diagnosing network issues by isolating problems to specific layers 34.
-How is the OSI Model Organized?
-The OSI model is organized from the lowest to the highest level, with each layer building upon the one below it. This hierarchical structure allows for a clear understanding of how data flows through a network, from physical transmission to application-specific communication 23.
-The Seven Layers of the OSI Model:
-Physical Layer: Handles raw bit transmission over physical mediums (cables, radio signals).
-Data Link Layer: Ensures error-free transfer of data frames between nodes.
-Network Layer: Manages packet routing through logical addressing (IP addresses).
-Transport Layer: Responsible for end-to-end communication, error control, and flow control (TCP/UDP).
-Session Layer: Establishes, manages, and terminates sessions between applications.
-Presentation Layer: Translates data formats, handles encryption and compression.
-Application Layer: Interfaces with user applications (e.g., HTTP for web browsers, SMTP for emails) 124.
-In summary, the OSI model is an essential framework in networking that helps professionals understand complex interactions in data communication systems while promoting standardization across different technologies.
+2
+2
