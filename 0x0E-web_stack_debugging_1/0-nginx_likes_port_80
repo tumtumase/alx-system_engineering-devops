@@ -5,18 +5,16 @@
 apt-get update -y && apt-get install -y nginx
 
 # Configure Nginx to listen on port 80 (default configuration already listens on port 80)
-# Just ensure it's correctly set up and restart the service
 sed -i '/^#*listen 80;/c\listen 80;' /etc/nginx/sites-available/default
 
 # Ensure the default Nginx configuration is enabled
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 
-# Start and enable Nginx to run on boot
-systemctl restart nginx
-systemctl enable nginx
+# Start Nginx using the service command
+service nginx start
 
 # Verify Nginx is running
-if systemctl status nginx | grep -q "active (running)"; then
+if service nginx status | grep -q "active (running)"; then
   echo "Nginx is running and configured to listen on port 80"
 else
   echo "Failed to start Nginx"
